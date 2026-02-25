@@ -1,0 +1,48 @@
+.NavContact {
+  background-color: var(--grey-800);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px;
+}
+.perfil {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.perfil img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.perfil h2 {
+  font-size: 22px;
+}
+
+.acciones {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+.acciones button {
+  padding: 7px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: var(--grey-800);
+  color: var(--grey-300);
+  transition: transform .2s;
+}
+
+.acciones button svg {
+  width: 20px;
+}
+
+.acciones button:hover {
+  background-color: var(--grey-700);
+  transform: translateY(-4px);
+}

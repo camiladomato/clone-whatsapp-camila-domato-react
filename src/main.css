@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #5D3FD3;
+  --grey-900: #0d1919;
+  --grey-800: #121b22;
+  --grey-600: #1f2c34;
+  --grey-700: #9f9fa1;
+  --grey-500: #dfdfe1;
+  --grey-300: #fefff6;
+  --grey-200: #f1f2f6;
+  --violet-100: #E6E6FA;
+  --violet-300: #9370DB;
+  --violet-500: #8A2BE2;
+   --sidebar-bg: #111827;
+  --sidebar-header: #1f2933;
+  --sidebar-item: #1b2530;
+  --sidebar-hover: #2a3441;
+  --sidebar-text: #e5e7eb;
+  --sidebar-text-muted: #9ca3af;
+
+}
+body {
+  font-family: "Cause", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--primary-color);
+  padding: 40px;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}

@@ -1,0 +1,19 @@
+.search {
+  background-color: var(--grey-800);
+  padding: 10px;
+}
+
+.search form input {
+  background-color: var(--grey-700);
+  width: 100%;
+  display: block;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  color: white;
+}
+
+.search input:focus {
+  outline: 1px solid var(--grey-300);
+}
