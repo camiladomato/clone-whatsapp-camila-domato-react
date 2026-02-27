@@ -4,6 +4,8 @@
   flex-direction: column;
   gap: 6px;
   padding: 6px;
+  overflow: auto;
+  height: 723px;
 }
 
 .user-chat {
