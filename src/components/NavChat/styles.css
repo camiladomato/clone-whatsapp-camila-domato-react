@@ -1,0 +1,9 @@
+.user-chat {
+  background-color: var(--sidebar-item);
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  gap: 10px;
+  border-left: 3px solid transparent;
+   transition: background-color .2s ease, border-left .2s ease;
+}
