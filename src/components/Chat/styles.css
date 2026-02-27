@@ -1,3 +1,7 @@
 .chat{
     background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    min-height: 70%;
+    position: relative;
 }

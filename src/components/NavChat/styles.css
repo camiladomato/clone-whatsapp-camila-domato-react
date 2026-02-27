@@ -1,9 +1,24 @@
-.user-chat {
-  background-color: var(--sidebar-item);
+.chat-header {
+  background-color: #faf9ff;
+  border-bottom: 1px solid var(--grey-500);
   display: flex;
-  padding: 10px;
+  padding: 8px;
   align-items: center;
   gap: 10px;
-  border-left: 3px solid transparent;
-   transition: background-color .2s ease, border-left .2s ease;
+}
+
+.chat-header img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.chat-header p {
+  color: var(--grey-700);
+}
+
+
+.chat-panel {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
 }

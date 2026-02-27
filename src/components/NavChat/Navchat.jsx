@@ -2,10 +2,10 @@ import './styles.css'
 
 const NavChat = () => {
   return (
-    <div className="chat">
+    <div >
       <header class="chat-header">
         <img
-          src="https://media.licdn.com/dms/image/v2/D4E03AQFrq2Y1y0EytQ/profile-displayphoto-crop_800_800/B4EZo370E3KoAI-/0/1761875018739?e=1770854400&v=beta&t=-VqvJ35aPpuQCM4uPJEGZwzMARBk3R-ufbJdRCGW3i0"
+          src="./src/assets/dami.jpg"
           alt="foto de perfil" />
         <div>
           <h3>Damian Benitez</h3>
