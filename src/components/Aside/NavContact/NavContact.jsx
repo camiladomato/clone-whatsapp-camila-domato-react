@@ -1,11 +1,11 @@
 import './styles.css'
 
-const NavContact = () => {
+const NavContact = ({name , img}) => {
   return (
     <div className="NavContact">
          <div className="perfil">
-          <img src="https://github.com/camiladomato.png" alt="foto de perfil" />
-          <h2>Camila Domato</h2>
+          <img src={img} alt={`Foto de perfil de ${name}`} />
+          <h2>{name}</h2>
         </div>
         <div className="acciones">
           <button>
