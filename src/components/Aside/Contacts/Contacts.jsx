@@ -101,7 +101,7 @@ const listaContactos = [
     <section className='chats'>
         <ul>
               {listaContactos.map((contacto) => (
-                <Contact img={contacto.img} nombre={contacto.nombre} msj={contacto.msj} time={contacto.time} >
+                <Contact img={contacto.img} nombre={contacto.nombre} msj={contacto.msj} time={contacto.time} key={contacto.id}>
                 </Contact>
       ))}
         </ul>
