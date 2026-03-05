@@ -6,11 +6,11 @@ const Contact = ({img , nombre , msj , time}) => {
     <>
         <li className='user-chat'>
             <img src={img} alt="foto de perfil de ..." />
-             <div class="chat-info">
+             <div className="chat-info">
               <h3>{nombre}</h3>
               <p>{msj}</p>
             </div>
-           <span class="time">{time}</span>
+           <span className="time">{time}</span>
           </li>
     </>
   )

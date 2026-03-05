@@ -3,7 +3,7 @@ import './styles.css'
 const NavChat = () => {
   return (
     <div >
-      <header class="chat-header">
+      <header className="chat-header">
         <img
           src="./src/assets/dami.jpg"
           alt="foto de perfil" />
