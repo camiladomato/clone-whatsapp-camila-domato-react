@@ -1,5 +1,5 @@
 import './styles.css'
-import Contact from '../Contact/Contact'
+import Contact from './Contact/Contact'
 
 const Contacts = () => {
 
