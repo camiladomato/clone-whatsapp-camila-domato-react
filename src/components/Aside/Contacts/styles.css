@@ -68,4 +68,7 @@
 .user-chat.active img {
   border-color: var(--violet-300);
 }
+.no-resultados{
+  margin-left: 30px;
+}
 
