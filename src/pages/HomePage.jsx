@@ -9,7 +9,7 @@ function HomePage() {
     <>
       <div className="home-page">
         <Aside />
-        <Chat />
+        <Chat />  
       </div>
     </>
   )
