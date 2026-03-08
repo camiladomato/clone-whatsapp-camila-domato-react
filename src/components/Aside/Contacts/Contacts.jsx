@@ -11,7 +11,7 @@ const Contacts = ({contactos}) => {
           }
         <ul>
               {contactos.map((contacto) => (
-                <Contact img={contacto.img} nombre={contacto.nombre} mensajes={contacto.mensajes} time={contacto.time} key={contacto.id}>
+                <Contact img={contacto.img} nombre={contacto.nombre} mensajes={contacto.mensajes} time={contacto.time} key={contacto.id} id={contacto.id}>
                 </Contact>
       ))}
         </ul>

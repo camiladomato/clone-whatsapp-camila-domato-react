@@ -1,15 +1,21 @@
+import {appContext} from "../../../context/appContext"
+import { useContext } from 'react'
 import './styles.css'
 
 const NavChat = () => {
+
+  const{contactSelect}= useContext(appContext)
+ console.log( contactSelect)
+
   return (
     <div >
       <header className="chat-header">
         <img
-          src="./src/assets/dami.jpg"
+          src={contactSelect.img}
           alt="foto de perfil" />
         <div>
-          <h3>Damian Benitez</h3>
-          <p>últ. vez hoy a la(s) 15:47 p. m.</p>
+          <h3>{contactSelect.nombre}</h3>
+          <p>Ultima vez {contactSelect.lastConnect} hs</p>
         </div>
       </header>
     </div>
