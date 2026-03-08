@@ -1,13 +1,13 @@
-import { useState } from "react"
+import { useState , useContext} from "react"
 import Contacts from "./Contacts/Contacts"
 import NavContact from "./NavContact/NavContact"
 import Search from "./Search/Search"
-import {user} from "../../services/mockApi.js"
+import {appContext} from "../../context/appContext"
 import './styles.css'
 
 const Aside = () => {
-
-  const {name , img , contactos} = user;
+  const{userContext}= useContext(appContext)
+  const {name , img , contactos} = userContext;
   const[contactosFiltrados,setContactosFiltrados]=useState(contactos)
 
   return (
