@@ -6,8 +6,8 @@ import {appContext} from "../../context/appContext"
 import './styles.css'
 
 const Aside = () => {
-  const{userContext}= useContext(appContext)
-  const {name , img , contactos} = userContext;
+  const{user}= useContext(appContext)
+  const {name , img , contactos} = user;
   const[contactosFiltrados,setContactosFiltrados]=useState(contactos)
 
   return (

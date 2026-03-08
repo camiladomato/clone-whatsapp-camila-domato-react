@@ -1,15 +1,28 @@
 import { useState } from 'react'
+import { appContext } from '../context/appContext';
+import { useContext } from 'react'
+import { useNavigate } from "react-router-dom";
 import './styles.css'
 
 const Login = () => {
 
-
+const{login}= useContext(appContext)
 const [email , setEmail] = useState("");
 const [password , setPassword] = useState("");
+const navigate = useNavigate()
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        console.log("enviando")
+
+  
+   const respuestaLogin = login(email,password)
+
+   if(!respuestaLogin){
+    alert("credenciales invalidas")
+    return
+   }
+
+   navigate("/")
         
     setEmail("")
     setPassword("")
