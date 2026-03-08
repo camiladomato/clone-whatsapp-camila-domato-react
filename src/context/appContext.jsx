@@ -7,6 +7,8 @@ const AppProvider = ({children}) => {
 
     const[contactSelect , setContactSelect] = useState({})
     const [userContext , setUserContext] = useState(user)
+
+   
     const idContactoSeleccionado = (idUser) =>{
         setContactSelect(user.contactos.find((contacto)=> contacto.id == idUser ))
     }

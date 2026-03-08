@@ -1,6 +1,8 @@
 const user = {
   name: "Camila Domato",
   img: "https://github.com/camiladomato.png",
+  email:"camiladomato@gmail.com",
+  password:"utn123",
   contactos: [
     {
       id: 1,

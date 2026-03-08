@@ -1,40 +1,51 @@
 
 .messages {
-  padding: 20px;
+  padding: 30px 7%;
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
   overflow-y: auto;
   position: relative;
   z-index: 1;
   overflow-x: hidden;
   min-height: 0;
   background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../../../assets/fondo-wsp-chat-original.png");
-  background-size: 65% ;
+  background-size: 400px ;
+  background-repeat: repeat;
   background-color: #f1ebe3;
 }
+.messages::-webkit-scrollbar {
+  width: 6px;
+}
 
+.messages::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
 
 .message {
   background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  padding: 10px;
-  width: 60%;
+  border-radius:18px 18px 18px 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding:8px 15px;
+  width: 65%;
   position: relative;
     z-index: 2;
+    word-wrap: break-word;
 }
 
 .message .time {
   color: var(--grey-900);
-  font-size: 14px;
+  font-size: 11px;
   text-align: end;
 }
 
 .me {
-  align-self: end;
+  align-self: flex-end;
   background-color: var(--violet-300);
+  border-radius: 18px 18px 2px 18px;
+  color: #111b21;
 }
 .no-selection {
   display: flex;
