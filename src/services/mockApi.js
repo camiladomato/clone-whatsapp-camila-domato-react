@@ -11,9 +11,21 @@ const users = [
         img: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop",
         lastConnect: "11:25",
         mensajes: [
-          { id: 101, sender: "contact", text: "Hola Camila, ¿tenés los diseños?", time: "11:15" },
-          { id: 102, sender: "me", text: "Sí, estoy terminando el Aside", time: "11:18" },
-          { id: 103, sender: "contact", text: "Dale, quedo atento al ultimo msj", time: "11:20" }
+          { id: 101, sender: "contact", text: "Hola Camila, ¿tenés los diseños para el TP?", time: "11:15" },
+          { id: 102, sender: "me", text: "¡Hola! Sí, estoy terminando de pulir el Aside ahora mismo.", time: "11:18" },
+          { id: 103, sender: "contact", text: "Buenísimo. ¿Pudiste separar los componentes o metiste todo en App?", time: "11:20" },
+          { id: 104, sender: "me", text: "No, tranqui, armé una carpeta components con NavChat, Aside y MessageList.", time: "11:22" },
+          { id: 105, sender: "me", text: "Usé props para pasar la info de los usuarios, así queda más limpio.", time: "11:23" },
+          { id: 106, sender: "contact", text: "¡Clave! Eso nos va a ahorrar mil errores después.", time: "11:25" },
+          { id: 107, sender: "contact", text: "¿Y con Tailwind cómo venís? ¿Te costó el responsive?", time: "11:26" },
+          { id: 108, sender: "me", text: "Más o menos, me peleé un poco con el flexbox del chat pero ya lo saqué.", time: "11:30" },
+          { id: 109, sender: "me", text: "Ahora el input de mensaje se queda fijo abajo como en el original.", time: "11:31" },
+          { id: 110, sender: "contact", text: "Genial. Acordate de subir los cambios al repo de GitHub así los miro.", time: "11:35" },
+          { id: 111, sender: "me", text: "Dale, termino de corregir un bug en el useEffect y lo subo.", time: "11:40" },
+          { id: 112, sender: "contact", text: "Perfecto, quedo atento al último commit entonces.", time: "11:42" },
+          { id: 113, sender: "me", text: "¡Listo! Ya debería estar en el main. Avisame si te rompe algo.", time: "11:50" },
+          { id: 114, sender: "contact", text: "Lo estoy clonando... ¡Se ve bárbaro! Buen laburo con esos estilos.", time: "11:55" },
+          { id: 115, sender: "me", text: "¡Gracias! Mañana seguimos con la lógica del fetch.", time: "11:58" }
         ]
       },
       {
