@@ -10,7 +10,7 @@ const Messages = () => {
   const userMsj = contactSelect.mensajes
 
   return (
-    <div className='messages'>
+    <div className="messages">
       {contactSelect.id ? (
         contactSelect.mensajes.map((mensaje, index) => (
           <Message
