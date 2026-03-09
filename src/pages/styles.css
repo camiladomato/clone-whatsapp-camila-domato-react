@@ -1,12 +1,28 @@
+body{
+  margin: 0;
+    background-color: #dadbd3; 
+    background-image: linear-gradient(#8909de 0%, #a671de 127px, #dadbd3 127px, #dadbd3 100%);
+    background-attachment: fixed;
+}
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--grey-900); 
+  padding: 20px;
+}
 .home-page{
-    max-width: 1100px;
-    margin: auto;
+  width: 100%;
+   max-width: 1400px;
+    margin: 20px auto;
     display: grid;
-    grid-template-columns: 320px 1fr;
-    height: 90vh;
+    grid-template-columns: 30% 70%;
+    height: calc(100vh - 40px);
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 .login-container {
@@ -65,7 +81,7 @@
 .login-form button:active {
   transform: scale(0.98);
 }
-/* El contenedor principal */
+
 section.no-found {
   display: flex;
   flex-direction: column;
@@ -78,17 +94,17 @@ section.no-found {
   margin: 0;
 }
 
-/* El número del error */
+
 section.no-found h1 {
-  color: #41525d; /* Color de texto de WA */
+  color: #41525d; 
   font-size: 24px;
   font-weight: 300;
   margin-bottom: 24px;
 }
 
-/* El botón de volver */
+
 section.no-found a {
-  background-color: #00a884; /* Verde WhatsApp */
+  background-color: #00a884; 
   color: #ffffff;
   text-decoration: none;
   padding: 10px 24px;

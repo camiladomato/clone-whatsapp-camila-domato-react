@@ -5,7 +5,7 @@ import './styles.css'
 const NavChat = () => {
 
   const{contactSelect}= useContext(appContext)
- console.log( contactSelect)
+
 
   return (
     <div >

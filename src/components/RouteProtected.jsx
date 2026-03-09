@@ -6,7 +6,7 @@ const RouteProtected = ({children}) => {
     const{user}= useContext(appContext)
 
     if (!user){
-        return <Navigate to="/login" replace />
+        return <Navigate to="/ingresar" replace />
     }
          return(children)
     }
