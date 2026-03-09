@@ -1,8 +1,13 @@
+import {appContext} from "../../../context/appContext"
+import { useContext } from 'react'
 import './styles.css'
 
 const SendMessage = () => {
+   const{contactSelect}= useContext(appContext)
   return (
-    <footer>
+   <>
+    {contactSelect.id?
+      ( <footer>
         <button id="btn-attach" className="attach">
           <svg xmlns="http://www.w3.org/2000/svg" width="131.11" height="128" viewBox="0 0 718 701">
             <path fill="currentColor"
@@ -19,7 +24,13 @@ const SendMessage = () => {
           </button>
         </form>
 
-      </footer>
+      </footer>) 
+      :
+      (<div></div>)
+
+    }
+   </>
+   
   )
 }
 
