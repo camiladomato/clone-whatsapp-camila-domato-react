@@ -54,6 +54,8 @@ const AppProvider = ({ children }) => {
 
     const logOut = () =>{
         localStorage.removeItem("user")
+        localStorage.removeItem("currentContact")
+        setUser(null)
     }
 
 
