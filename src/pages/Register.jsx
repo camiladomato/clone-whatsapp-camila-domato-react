@@ -1,8 +1,12 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
+import { appContext } from "../context/appContext"
+import { useContext } from 'react'
 import "./styles.css";
 
 const Register = () => {
+     const { registro } = useContext(appContext)
+
     const [formData, setFormData] = useState({
         nombre: "",
         email: "",
@@ -58,9 +62,17 @@ const Register = () => {
         event.preventDefault();
 
         if (validate()) {
-            alert("Registro exitoso. Ahora puedes iniciar sesión.");
-            navigate("/ingresar");
-        }
+            navigate("/");
+        }   
+        const nuevoUsuario = {
+        name: formData.nombre,
+        email: formData.email,
+        password: formData.password,
+        img: "https://unavatar.io/github/placeholder",
+        contactos:[],          
+    };
+     registro(nuevoUsuario)
+     localStorage.setItem("user",JSON.stringify(nuevoUsuario))
     };
 
     return (
@@ -105,7 +117,7 @@ const Register = () => {
                 <p style={{ textAlign: "center", fontSize: "14px", color: "#666" }}>
                     ¿Ya tienes cuenta?{" "}
                     <Link
-                        to="/ingresar"
+                        to="/"
                         style={{ color: "#4a90e2", textDecoration: "none" }}
                     >
                         Inicia sesión

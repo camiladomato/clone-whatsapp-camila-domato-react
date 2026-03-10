@@ -52,6 +52,10 @@ const AppProvider = ({ children }) => {
         setContactSelect(user.contactos.find((contacto) => contacto.id == idUser))
     }
 
+    const registro = (userRegistrado) => {
+        setUser(userRegistrado)
+    }
+
     const logOut = () =>{
         localStorage.removeItem("user")
         localStorage.removeItem("currentContact")
@@ -61,7 +65,7 @@ const AppProvider = ({ children }) => {
 
 
     return (
-        <appContext.Provider value={{user, contactSelect, setContactSelect, idContactoSeleccionado, login , logOut}}>
+        <appContext.Provider value={{user, contactSelect, setContactSelect, idContactoSeleccionado, login , logOut , registro}}>
             {children}
         </appContext.Provider>
     )
