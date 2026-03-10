@@ -1,6 +1,6 @@
 
 import './styles.css'
-import Message from './Menssage/Menssage'
+import Message from './Message/Message'
 import { appContext } from "../../../context/appContext"
 import { useContext } from 'react'
 

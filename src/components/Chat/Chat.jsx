@@ -1,4 +1,4 @@
-import Messages from './Menssages/Messages.jsx'
+import Messages from './Messages/Messages.jsx'
 import NavChat from './NavChat/NavChat.jsx'
 import SendMessage from './SendMessage/SendMessage.jsx'
 import './styles.css'
