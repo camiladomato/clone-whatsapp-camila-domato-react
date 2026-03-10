@@ -15,10 +15,10 @@ body{
 .home-page{
   width: 100%;
    max-width: 1400px;
-    margin: 80px auto;
+    margin: 40px auto;
     display: grid;
     grid-template-columns: 30% 70%;
-    height: calc(100vh - 223px);
+    height: calc(100vh - 143px);
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
