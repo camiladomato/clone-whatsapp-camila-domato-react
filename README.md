@@ -72,7 +72,7 @@ Ejecutar el comando de construcción: **npm run build.**
 
 El contenido de la carpeta /dist es el que debe subirse al servicio de hosting (Vercel).
 
-Link de vercel -> https://clone-whatsapp-camila-domato-react.vercel.app/ingresar
+Link de vercel -> https://clone-whatsapp-camila-domato-react.vercel.app/
 
 
 ### **📄 Documentación Adicional **
