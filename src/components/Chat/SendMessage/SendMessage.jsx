@@ -11,8 +11,9 @@ const SendMessage = () => {
     }
 
     const newSendMessage = (e) => {
-      e.preventDefault()
-      if(text.length === 0){
+     if (e) e.preventDefault()
+
+      if(text.trim().length === 0){
         return
       }
       const currentTime = new Date()
@@ -30,6 +31,13 @@ const SendMessage = () => {
       setText("")
 
     }
+
+    const handleKeyDown = (e) => {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault() 
+      newSendMessage()   
+    }
+  }
    
   return (
 
@@ -44,7 +52,7 @@ const SendMessage = () => {
           </svg>
         </button>
         <form id="formMessage"  onSubmit={newSendMessage}>
-          <textarea id="message" type="text" placeholder="Escribe un mensaje" onChange={handleChange} value={text}></textarea>
+          <textarea id="message" type="text" placeholder="Escribe un mensaje" onChange={handleChange} onKeyDown={handleKeyDown} value={text}></textarea>
           <button type="submit" className="enviar">
             <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24">
               <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
