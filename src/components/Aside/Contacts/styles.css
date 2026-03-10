@@ -5,7 +5,7 @@
   gap: 6px;
   padding: 6px;
   overflow: auto;
-  height: calc(100vh - 287px);
+  height: calc(100vh - 270px);
 }
 
 .user-chat {
