@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { appContext } from '../context/appContext';
 import { useContext } from 'react'
-import { useNavigate } from "react-router-dom";
+import { useNavigate , Link} from "react-router-dom";
 import './styles.css'
 
 const Login = () => {
@@ -61,8 +61,12 @@ return(
            value={password}
         />
         <button type="submit">Enviar</button>
-       
+        <p style={{ textAlign: 'center', fontSize: '14px', color: '#666' }}>
+                    ¿No tienes cuenta? <Link to="/registro" style={{ color: '#4a90e2', textDecoration: 'none' }}>Registrate</Link>
+                </p>
       </form>
+
+
     </div>
 )
 }
