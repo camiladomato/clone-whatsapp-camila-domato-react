@@ -15,10 +15,10 @@ body{
 .home-page{
   width: 100%;
    max-width: 1400px;
-    margin: 20px auto;
+    margin: 80px auto;
     display: grid;
     grid-template-columns: 30% 70%;
-    height: calc(100vh - 40px);
+    height: calc(100vh - 160px);
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
@@ -30,7 +30,7 @@ body{
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #f0f2f5;
+  background-color: transparent;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -38,32 +38,35 @@ body{
 .login-form {
   background: #ffffff;
   padding: 2.5rem;
-  border-radius: 12px;
+  border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
   width: 100%;
   max-width: 400px;
+  border-top: 5px solid var(--primary-color);
 }
 
 .login-form input {
   padding: 12px 16px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--grey-500);
   border-radius: 8px;
   font-size: 1rem;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
   outline: none;
+  background-color: var(--grey-300);
 }
 
 .login-form input:focus {
-  border-color: #4a90e2;
-  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+ border-color: var(--violet-500);
+  box-shadow: 0 0 0 3px rgba(138, 43, 226, 0.2);
 }
 
 
+
 .login-form button {
-  background-color: #4a90e2;
+  background-color: var(--primary-color);
   color: white;
   padding: 12px;
   border: none;
@@ -75,7 +78,7 @@ body{
 }
 
 .login-form button:hover {
-  background-color: #357abd;
+  background-color: var(--violet-500);
 }
 
 .login-form button:active {
@@ -88,7 +91,7 @@ section.no-found {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #f0f2f5; 
+  background-color: transparent;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   text-align: center;
   margin: 0;
@@ -96,29 +99,28 @@ section.no-found {
 
 
 section.no-found h1 {
-  color: #41525d; 
-  font-size: 24px;
-  font-weight: 300;
-  margin-bottom: 24px;
+  color: var(--grey-900); 
+  font-size: 30px; 
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
-
 section.no-found a {
-  background-color: #00a884; 
+  background-color: var(--primary-color); 
   color: #ffffff;
   text-decoration: none;
-  padding: 10px 24px;
+  padding: 12px 24px;
   border-radius: 24px;
   font-size: 14px;
-  font-weight: 500;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  transition: opacity 0.2s;
+  font-weight: 600;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s;
 }
 
 section.no-found a:hover {
-  opacity: 0.8;
+  background-color: var(--violet-500);
 }
-/* Estilos adicionales para errores en formularios */
+
 .error-text {
     color: #e74c3c;
     font-size: 12px;
@@ -129,8 +131,4 @@ section.no-found a:hover {
 
 .login-form input.input-error {
     border-color: #e74c3c;
-}
-
-.login-form input.input-error:focus {
-    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.2);
 }

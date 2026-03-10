@@ -6,11 +6,13 @@ import { NotFound } from "../pages/NotFound"
 import App from "../App"
 import { RouteProtected } from "../components/RouteProtected"
 import { PublicRoute } from "../components/PublicRoute"
+import { Nav } from "../components/Nav/Nav"
 
 
 const RouterApp = () =>{
     return(
         <BrowserRouter>
+            <Nav />
             <Routes>
                 <Route path="/ingresar" element={<PublicRoute><Login/></PublicRoute>}></Route>
                 <Route path="/" element={<RouteProtected><App /></RouteProtected>}></Route>

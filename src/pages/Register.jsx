@@ -61,8 +61,8 @@ const Register = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        if (validate()) {
-            navigate("/");
+        if (!validate()) {
+           return
         }   
         const nuevoUsuario = {
         name: formData.nombre,
@@ -73,6 +73,7 @@ const Register = () => {
     };
      registro(nuevoUsuario)
      localStorage.setItem("user",JSON.stringify(nuevoUsuario))
+      navigate("/");
     };
 
     return (
