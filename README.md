@@ -1,16 +1,67 @@
-# React + Vite
+## **📱 WSP-Clon - Trabajo Práctico UTN**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es un **clon funcional de la interfaz de WhatsApp Web,** desarrollado como parte de la formación en la UTN. 
+La aplicación permite la gestión de contactos, envío de mensajes simulados y persiste la información del usuario mediante tecnologías modernas de desarrollo frontend.
 
-Currently, two official plugins are available:
+### **🚀 Tecnologías Utilizadas**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+El proyecto fue construido utilizando las siguientes herramientas:
 
-## React Compiler
+- REACT + VITE: Entorno de desarrollo de alto rendimiento.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- REACT ROUTER DOM: Gestión de navegación y protección de rutas.
 
-## Expanding the ESLint configuration
+- CONTEXT API: Manejo del estado global (Autenticación y Mensajes).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- CSS3: Diseño personalizado basado en la interfaz original de WhatsApp.
+
+- LOCALSTORAGE: Persistencia de datos local para sesiones y chats.
+
+- NVM: Gestión de versiones de Node.js (v16 / v24).
+
+#### **📂 Estructura del Proyecto**
+
+src/
+├── components/
+│    ├── Aside/          # Barra lateral (Buscador y Lista de Contactos)
+│    ├── Chat/           # Ventana de conversación y envío de mensajes
+│    ├── Nav/            # Navegación principal de la App
+│    ├── PublicRoute.jsx     # Lógica de rutas públicas
+│    └── RouteProtected.jsx  # Lógica de rutas privadas
+├── context/             # appContext.jsx (Estado global)
+├── pages/               # Vistas: HomePage, Login, Registro, Readme, 404
+├── router/              # RouterApp.jsx (Configuración de rutas)
+├── services/            # mockApi.js (Simulación de datos)
+├── App.jsx              # Componente raíz
+└── main.jsx             # Punto de entrada de React
+
+### 🛠️ Instrucciones para ejecutar el proyecto localmente
+
+Para correr este proyecto en tu entorno local, seguí estos pasos:
+
+**Clonar el repositorio:**
+git clone [https://github.com/camiladomato/clone-whatsapp-camila-domato-react.git](https://github.com/camiladomato/clone-whatsapp-camila-domato-react.git)
+
+**Ingresar a la carpeta del proyecto:**
+cd clone-whatsapp-camila-domato-react
+
+**Instalar las dependencias necesarias:**
+npm install
+
+**Iniciar el servidor de desarrollo:**
+npm run dev
+
+**Nota:** Una vez iniciado, abrí el link proporcionado en la terminal (por defecto http://localhost:5173).
+
+### **🌐 Instrucciones para el Deploy**
+
+Ejecutar el comando de construcción: **npm run build.**
+
+El contenido de la carpeta /dist es el que debe subirse al servicio de hosting (Vercel o Netlify).
+
+### **📄 Documentación Adicional **
+
+Para consultar decisiones de diseño, dificultades técnicas y observaciones personales, visitá la sección interna de Documentación en la ruta pública: /acerca
+
+##### Desarrollado por: Camila Domato - Estudiante de UTN
+##### Año: 2026
