@@ -5,6 +5,7 @@ import { FaCamera } from "react-icons/fa";
 import { appContext } from "../../../context/appContext";
 import {useContext} from "react"
 import { useNavigate } from "react-router-dom";
+import ToolTip from "../../ToolTip/ToolTip";
 
 import './styles.css'
 
@@ -27,18 +28,26 @@ const NavContact = ({name , img}) => {
           <h2>{name}</h2>
         </div>
         <div className="acciones">
-          <button>
+          <ToolTip text="Tomar foto">
+            <button>
             <FaCamera />
           </button>
-          <button>
+          </ToolTip>
+          <ToolTip text="Enviar imagen">
+            <button>
           <FaImage />
           </button>
-          <button>
+          </ToolTip>
+          <ToolTip>
+            <button>
             <GrDocumentConfig />
           </button>
-          <button onClick={handleLogout}>
+          </ToolTip>
+          <ToolTip>
+            <button onClick={handleLogout}>
             <MdOutlineLogout />
           </button>
+          </ToolTip>
         </div>
     </div>
   )
